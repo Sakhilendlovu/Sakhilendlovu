@@ -1,0 +1,102 @@
+Dice Game Documentation
+Introduction
+This documentation provides an overview and instructions for playing a dice game implemented in C++. 
+The game allows multiple players to roll dice and compete to achieve the highest score. Each player 
+takes turns rolling the dice and accumulating points based on the outcome.
+
+
+Game Rules
+
+1.The game is played with a set of standard six-sided dice.
+2.The number of players and the number of dice per roll can be specified at the beginning of the game.
+3.Each player takes turns rolling the dice.
+4.The sum of the dice values rolled by a player in each turn contributes to their score.
+5.If a player rolls a 1, their turn ends, and they lose all the points accumulated in that turn.
+6.A player can choose to roll the dice multiple times in a single turn until they decide to stop or until they roll a 1.
+7.The first player to reach or exceed a specified winning score wins the game.
+8.In case of a tie, the player who reached the winning score first is declared the winner.
+
+
+Game Components
+The game includes the following components:
+
+1.Dice: The game uses standard six-sided dice. Each die has numbers from 1 to 6.
+
+2.Player: Each player has a name and a score. The score represents the total points accumulated during the game.
+
+3.Game Manager: The game manager controls the flow of the game. It handles player turns, dice rolling, and scoring.
+
+Compilation and Execution
+To compile and run the game, follow these steps:
+
+1.Ensure you have a C++ compiler installed on your system (e.g., GCC, Clang).
+
+2.Save the game code to a file with the ".cpp" extension (e.g., dice_game.cpp).
+
+3.Open a terminal or command prompt and navigate to the directory where you saved the file.
+
+4.Compile the code using the following command:
+
+  >Copy code<
+g++ -o dice_game dice_game.cpp
+
+5.Run the game by executing the compiled executable:
+
+bash
+Copy code
+./dice_game
+
+Game Interaction
+Once the game starts, you will be prompted to enter the number of players, the number of dice per roll, and the winning score. 
+Follow the on-screen instructions and provide the requested information.
+
+During a player's turn, they will be prompted to roll the dice or stop. If they choose to roll, the dice will be rolled, and the outcome will be displayed. 
+The player can continue rolling or stop and accumulate the points. If a player rolls a 1, their turn ends, and they lose all the points accumulated in that 
+turn.
+
+The game continues until a player reaches or exceeds the winning score. The winner is then announced, and the game terminates.
+
+Example Gameplay
+
+Here's an example of a game session:
+
+yaml
+    Copy code
+ Welcome to the Dice Game!
+
+Number of players: 2
+Number of dice per roll: 2
+Winning score: 50
+
+Player 1, it's your turn.
+Rolling 2 dice...
+You rolled: 3 4
+Points accumulated: 7
+Roll again? (Y/N) Y
+Rolling 2 dice...
+You rolled: 2 5
+Points accumulated: 14
+Roll again? (Y/N) N
+Turn ended. Total score: 14
+
+Player 2, it's your turn.
+Rolling 2 dice...
+You rolled: 6 6
+Points accumulated: 12
+Roll again? (Y/N) Y
+Rolling 2 dice...
+You rolled: 1
+Turn ended. Total score: 0
+
+...
+
+Player 1, it's your turn.
+Rolling 2 dice
+
+Conclusion
+This documentation provided an overview of the dice game and instructions for playing it. Compile and run the game code to start playing. 
+Enjoy the game and have fun!
+
+
+
+
